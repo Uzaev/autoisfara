@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #fff; color: #333;
+}
+header {
+  background: #222; color: white;
+  padding: 1rem;
+}
+nav ul {
+  display: flex; gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+nav a {
+  color: white; text-decoration: none;
+}
+.section {
+  padding: 1rem;
+}
+.card-container, .types-list {
+  display: flex; gap: 1rem;
+}
+.card, .type-card {
+  border: 1px solid #ccc;
+  padding: 1rem; border-radius: 8px;
+  text-align: center;
+  background: #f9f9f9;
+  flex: 1;
+}
+img {
+  max-width: 100%; height: auto;
+}
+.filters {
+  margin-bottom: 1rem;
+}
+.rating {
+  display: inline-block;
+  color: gold;
+  font-size: 1rem;
+}
+.rating::after {
+  content: '★★★★★';
+  letter-spacing: 2px;
+}
+.rating[data-score="4"]::after { content: '★★★★☆'; }
+.rating[data-score="5"]::after { content: '★★★★★'; }
+.rating[data-score="3"]::after { content: '★★★☆☆'; }
+
+.review-list {
+  margin-bottom: 1rem;
+}
+.review {
+  background: #f1f1f1;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #007BFF;
+}
+form textarea, form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+form button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-container, .types-list {
+    flex-direction: column;
+  }
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
