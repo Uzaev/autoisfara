@@ -1,1 +1,0 @@
-export function CarGallery({ selectedCars }) { return <div>Галерея автомобилей</div>; }
