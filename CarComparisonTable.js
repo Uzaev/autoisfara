@@ -1,1 +1,0 @@
-export function CarComparisonTable({ selectedCars }) { return <div>Таблица сравнения</div>; }
