@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autoisfara – Сравнение автомобилей</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Autoisfara</h1>
+    <nav>
+      <ul>
+        <li><a href="#types">Типы</a></li>
+        <li><a href="#brands">Бренды</a></li>
+        <li><a href="#models">Модели</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="types" class="section">
+    <h2>Типы автомобилей</h2>
+    <div class="types-list">
+      <div class="type-card"><h3>Седан</h3><p>Комфорт и простор. Идеален для города и трассы.</p></div>
+      <div class="type-card"><h3>Внедорожник</h3><p>Повышенная проходимость и вместительность.</p></div>
+      <div class="type-card"><h3>Кроссовер</h3><p>Комбинация седана и внедорожника.</p></div>
+    </div>
+  </section>
+
+  <section id="brands" class="section">
+    <h2>Популярные бренды</h2>
+    <div class="card-container">
+      <div class="card"><img src="img/bmw.jpg" alt="BMW" /><h3>BMW</h3><p>Немецкое качество и динамика.</p></div>
+      <div class="card"><img src="img/audi.jpg" alt="Audi" /><h3>Audi</h3><p>Технологии и стиль.</p></div>
+      <div class="card"><img src="img/toyota.jpg" alt="Toyota" /><h3>Toyota</h3><p>Надежность и экономичность.</p></div>
+    </div>
+  </section>
+
+  <section id="models" class="section">
+    <h2>Сравнение моделей</h2>
+
+    <div class="filters">
+      <label>Тип:
+        <select id="typeFilter">
+          <option value="all">Все</option>
+          <option value="sedan">Седан</option>
+          <option value="suv">Внедорожник</option>
+          <option value="crossover">Кроссовер</option>
+        </select>
+      </label>
+      <label>Бренд:
+        <select id="brandFilter">
+          <option value="all">Все</option>
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Toyota">Toyota</option>
+        </select>
+      </label>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th>Модель</th><th>Тип</th><th>Цена</th><th>Оценка</th></tr>
+      </thead>
+      <tbody>
+        <tr class="BMW sedan">
+          <td>BMW 3 Series<div class="rating" data-score="4"></div></td><td>Седан</td><td>$42,000</td><td>4.5</td>
+        </tr>
+        <tr class="Audi sedan">
+          <td>Audi A4<div class="rating" data-score="5"></div></td><td>Седан</td><td>$41,000</td><td>4.6</td>
+        </tr>
+        <tr class="Toyota sedan">
+          <td>Toyota Camry<div class="rating" data-score="4"></div></td><td>Седан</td><td>$28,000</td><td>4.4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="reviews" class="section">
+    <h2>Отзывы пользователей</h2>
+    <div class="review-list">
+      <div class="review"><strong>Иван:</strong><p>BMW 3 Series — отличный выбор для драйва!</p></div>
+      <div class="review"><strong>Анна:</strong><p>Camry идеальна для семейных поездок.</p></div>
+    </div>
+
+    <h3>Оставить отзыв</h3>
+    <form id="reviewForm">
+      <input type="text" id="userName" placeholder="Ваше имя" required />
+      <textarea id="userReview" placeholder="Ваш отзыв..." required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
