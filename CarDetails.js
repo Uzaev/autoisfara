@@ -1,0 +1,1 @@
+export function CarDetails({ selectedCars }) { return <div>Детальные характеристики</div>; }

@@ -1,0 +1,1 @@
+export function CarSearch({ setSelectedCars }) { return <div>Поиск автомобилей</div>; }
