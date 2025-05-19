@@ -1,0 +1,29 @@
+[
+    {
+        "brand": "BMW",
+        "name": "X5",
+        "year": 2023,
+        "price": 65000,
+        "engine": "3.0L Turbo",
+        "rating": 4.7,
+        "image": "bmw.jpg"
+    },
+    {
+        "brand": "Mercedes",
+        "name": "E-Class",
+        "year": 2023,
+        "price": 70000,
+        "engine": "2.0L Hybrid",
+        "rating": 4.8,
+        "image": "mercedes.jpg"
+    },
+    {
+        "brand": "Audi",
+        "name": "Q7",
+        "year": 2023,
+        "price": 68000,
+        "engine": "3.0L V6",
+        "rating": 4.6,
+        "image": "audi.jpg"
+    }
+]
