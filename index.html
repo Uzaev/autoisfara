@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoIsFara - Сравнение автомобилей</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>AutoIsFara</h1>
+            <p>Лучший сайт для сравнения автомобилей</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#">Главная</a>
+            <a href="#">Сравнение</a>
+            <a href="#">Рейтинги</a>
+            <a href="#">Новинки</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="car-comparison">
+            <h2>Сравнение моделей</h2>
+            <div class="filter">
+                <input type="text" id="search" placeholder="Поиск по марке...">
+                <select id="brand-filter">
+                    <option value="all">Все бренды</option>
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="cars-grid" id="cars-container">
+                <!-- Автомобили загружаются через JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AutoIsFara. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
